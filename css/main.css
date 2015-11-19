@@ -1,21 +1,45 @@
 body{
-
+  background:#ddd;
 }
-.main-wrapper{
+.home-section{
 
+  hight:100vh;
 }
 .main-nav{
-  background:#cdcdcd;
+  background:rgba(200,200,200,1);
 }
-.main-logo{
-  margin:0px auto;
 
+.top-logo{
+  width:200px;
+  margin:0 auto;
 }
+.navbar-static-top{
+  max-height:50px;
+}
+#navbar{
+  margin-top:10px;
+}
+
 .icon-bar{
   background:#efefef;
 }
+.nav-ul li>a {
+  margin-right:140px;
+  background:none;
+}
+
 .nav-collapsed{
   background:#aaa;
+}
+.about-text{
+
+  position:relative;
+  padding-top:220px;
+  width:600px;
+  min-height:90%;
+  margin:0px auto;
+  text-align:center;
+  padding-bottom:20px;
 }
 
 
