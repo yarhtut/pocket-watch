@@ -5,9 +5,34 @@ body{
 
 }
 .main-nav{
-  background:#ededed;
+  background:#cdcdcd;
 }
 .main-logo{
   margin:0px auto;
-  
+
+}
+.icon-bar{
+  background:#efefef;
+}
+.nav-collapsed{
+  background:#aaa;
+}
+
+
+/*------------------out source-------*/
+
+
+#main-nav-fixed {
+  width: 100%;
+  height: 10px;
+}
+#nav-seperator {
+  display: none;
+  height: 10px;
+}
+#main-logo {
+  margin-bottom: 15px;
+}
+#content-wrapper {
+  margin-top: 80px;
 }
