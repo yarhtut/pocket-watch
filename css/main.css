@@ -1,5 +1,5 @@
 body{
-  background:#ddd;
+  background:rgba(252,252,252,1);
   /*font-family: 'roboto', Fallback, sans-serif;*/
 }
 
@@ -11,12 +11,21 @@ body{
     font-family: roboto;
     src: url(../fonts/roboto-thin.ttf);
 }
+p ,strong{
+  font-family: PT Serif Italic;
+  font-style:italic;
+  font-size:16px;
+}
 
+h1,h2,h4 ,li>a{
+  font-family: 'roboto', Fallback, sans-serif;
+
+}
 .home-section{
   min-height:100%;
 }
 .main-nav{
-  background:rgba(200,200,200,1);
+  background:rgba(242,242,242,1);
 }
 
 .main-logo-in-mobile{
@@ -32,9 +41,14 @@ body{
 .icon-bar{
   background:#efefef;
 }
+.nav-ul li{
+  margin-left:110px;
+  
+}
 .nav-ul li>a {
-  margin-right:140px;
-  background:none;
+  font-size:24px;
+
+
 }
 
 .nav-collapsed{
@@ -113,13 +127,16 @@ body{
   padding-bottom:50px;
 }
 .footer-section img{
-  width:150px;
+  width:200px;
   margin-top:100px;
   margin-left:30px;
 }
-.footer-section i{
+.footer-section i,strong{
   margin-left:15px;
 
+}
+.footer-social{
+  margin:0px auto;
 }
 /*--------------------out-source----------------------*/
 
