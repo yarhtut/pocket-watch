@@ -1,9 +1,19 @@
 body{
   background:#ddd;
+  /*font-family: 'roboto', Fallback, sans-serif;*/
 }
+
+@font-face {
+    font-family: playfair;
+    src: url(../fonts/playfair.otf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/roboto-thin.ttf);
+}
+
 .home-section{
   min-height:100%;
-  hight:100%;
 }
 .main-nav{
   background:rgba(200,200,200,1);
@@ -84,8 +94,14 @@ body{
 }
 /*-------------------contact-section-----------------*/
 .contact-section{
-  margin-top:100px;
+  background:#efefef;
   min-height:300px;
+}
+.contact-section h2{
+  margin-top: 100px;
+}
+.contact-sectoin p{
+  margin-bottom: 100px;
 }
 .contact-section h2,p{
   text-align:center;
