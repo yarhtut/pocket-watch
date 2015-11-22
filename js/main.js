@@ -5,18 +5,24 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
+/* affix the navbar after scroll below header */
+$('#nav').affix({
+      offset: {
+        top: $('header').height()-$('#nav').height()
+      }
+});
 
-$(function(){
-        // Check the initial Poistion of the Sticky Header
-        var stickyHeaderTop = $('#main-nav-fixed').offset().top;
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#nav' })
 
-        $(window).scroll(function(){
-                if( $(window).scrollTop() > stickyHeaderTop ) {
-                        $('#main-nav-fixed ').css({position: 'fixed', top: '0px'});
-                        $('#nav-seperator').css('display', 'block');
-                } else {
-                        $('#main-nav-fixed ').css({position: 'static', top: '0px'});
-                        $('#nav-seperator').css('display', 'none');
-                }
-        });
-  });
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},1000);
+})
+
+/* smooth scrolling for nav sections */
+$('#nav .navbar-nav li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top+20;
+  $('body,html').animate({scrollTop:posi},700);
+})

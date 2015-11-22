@@ -21,6 +21,11 @@ h1,h2,h4 ,li>a{
   font-family: 'roboto', Fallback, sans-serif;
 
 }
+.wrapper{
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
 .home-section{
   min-height:100%;
 }
@@ -34,33 +39,45 @@ h1,h2,h4 ,li>a{
 .navbar-static-top{
   max-height:50px;
 }
+#nav {
+  width: 100%;
+  position:static;
+  top:-32px;
+}
+
+#nav.affix {
+   position: fixed;
+   top: 0;
+   z-index:10;
+   -webkit-transition: all .6s ease-in-out;
+}
+header {
+  background: #fff;
+  height:250px;
+  color:#000000;
+}
 #navbar{
   margin-top:10px;
 }
-
 .icon-bar{
   background:#efefef;
 }
 .nav-ul li{
   margin-left:110px;
-  
+
 }
 .nav-ul li>a {
   font-size:24px;
-
-
 }
-
 .nav-collapsed{
   background:#aaa;
 }
 .about-text{
 
-  position:relative;
-  padding-top:220px;
-  width:600px;
+  padding-top:120px;
+
   min-height:90%;
-  margin:0px auto;
+
   text-align:center;
   padding-bottom:20px;
 }
@@ -109,16 +126,23 @@ h1,h2,h4 ,li>a{
 /*-------------------contact-section-----------------*/
 .contact-section{
   background:#efefef;
-  min-height:300px;
+  min-height:400px;
 }
 .contact-section h2{
-  margin-top: 100px;
+  margin-top: 20px;
+  color:#383838;
 }
 .contact-sectoin p{
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+.contact-section-text-area{
+  margin-top:10px;
+  padding:20px;
+  background-color:rgba(235,235,235,.8);
 }
 .contact-section h2,p{
   text-align:center;
+
 }
 /*-------------------footer-section-------------------*/
 .footer-section{
@@ -215,3 +239,33 @@ h1,h2,h4 ,li>a{
   height: 200px
 }
 /* End carousel */
+
+
+section {
+  color: #ffffff;
+  min-height: 500px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+}
+
+.parallax-1 {
+	background: url('../images/parallax.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #ddd;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+}
