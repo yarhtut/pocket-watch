@@ -11,7 +11,7 @@ body{
     font-family: roboto;
     src: url(../fonts/roboto-thin.ttf);
 }
-p ,strong{
+p ,strong,small{
   font-family: PT Serif Italic;
   font-style:italic;
   font-size:16px;
@@ -32,7 +32,10 @@ h1,h2,h4 ,li>a{
 .main-nav{
   background:rgba(242,242,242,1);
 }
-
+.main-logo{
+  margin-top:15px;
+  margin-bottom:15px;
+}
 .main-logo-in-mobile{
   width:100px;
 }
@@ -93,12 +96,25 @@ header {
 .thumbnail:hover{
   text-decoration:none !important;
 }
+.gallery-view-more{
 
+}
+.work-gallery-section .view-more{
+  margin-bottom:20px;
+  padding-bottom:20px;
+}
 /*-------------------text-area-section-----------------*/
 .text-area-section{
+
   margin-top:100px;
   min-height:300px;
+
 }
+/*.award-container{
+  background:rgba(255,255,255,0.8);
+  padding-bottom:100px;
+  margin-bottom:100px;
+}*/
 .text-area-section h2,p{
   text-align:center;
 }
@@ -250,6 +266,13 @@ section {
 }
 
 .parallax-1 {
+	background: url('../images/parallax.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.parallax-2 {
 	background: url('../images/parallax.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
   	-moz-background-size: cover;

@@ -26,3 +26,11 @@ $('#nav .navbar-nav li>a').click(function(){
   var posi = $(link).offset().top+20;
   $('body,html').animate({scrollTop:posi},700);
 })
+
+/* gallery view more on mobile */
+$('.gallery-view-more .btn').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $collapse = $this.closest('.collapse-group').find('.collapse');
+    $collapse.collapse('toggle');
+});
